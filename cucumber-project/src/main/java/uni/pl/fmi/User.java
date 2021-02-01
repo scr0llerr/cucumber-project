@@ -42,6 +42,7 @@ public class User {
     /**
      * 
      */
+    private boolean emptyGarage;
     private Set<Garage> garages = new HashSet<>();
 
     /**
@@ -132,6 +133,13 @@ public class User {
     /**
      * @return
      */
+    public boolean getEmptyGarage() {
+    	return emptyGarage;
+    }
+    public void setEmptyGarage(boolean emptyGarage) {
+    	this.emptyGarage = emptyGarage;
+    }
+    
     public Set<Garage> getGarages() {
         // TODO implement here
         return garages;
